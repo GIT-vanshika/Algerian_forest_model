@@ -1,1 +1,20 @@
-<h1> Welcome to the home page! </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to FWI Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Fire Weather Index Prediction</h1>
+    <p>Click the button below to access the prediction model.</p>
+
+    <!-- "Go to Model" button -->
+    <a href="{{ url_for('predict_datapoint') }}">
+      <button class="go-to-model">Go to Model</button>
+    </a>
+  </div>
+</body>
+</html>
